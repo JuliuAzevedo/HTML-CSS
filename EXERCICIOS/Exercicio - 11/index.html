@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!--A tag picture recebe uma imagem e permite que ela receba fontes diferentes-->
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1025px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <!--MP3 WAV OGG-->
+    <!--Pode utilizar o atributo "autoplay" (não está no codigo pq não para de repetir aaaaaaaaahhhh)-->
+    <audio src="midia/lost sky - fearless ptII.mp3" controls></audio>
+    <!--Forma "simplificada" sem as sources-->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/lost sky - fearless ptII.mp3" type="audio/mpeg">
+        <source src="midia/lost sky - fearless ptII.ogg" type="audio/ogg">
+        <source src="midia/lost sky - fearless ptII.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta esse tipo de midia <a href="midia/lost sky - fearless ptII.mp3">Clique aqui para baixar o mp3</a></p>
+    </audio>
+    <!--Forma maior utilizando as source, se um arquivo não carregar, ou o navegador não suportar ele irá tentar carregar o proximo, se nenhum deles der certo, o link aparece-->
+
+    
+    
+</body>
+</html>

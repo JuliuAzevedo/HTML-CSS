@@ -1,0 +1,32 @@
+@charset "UTF=8";
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Medidas absolutas: 
+    cm, mm, in(polegada), px, pt, pc
+    
+    Medidas Relativas: 
+    em, ex(altura x da fonte), rem, vw, vh, %
+    16px geralmente = 1em
+    */
+    font-size: 1em;
+    /*Peso da fonte: ligther, normal, bold, bolder*/
+    font-weight: normal;
+    /*Permite usar o italico*/
+    font-style: italic;
+}
+h1 {  
+    /*shorthand font  
+
+    font-style: italic;     
+    font-weight: bolder;    ->  Peso da fonte: ligther, normal, bold, bolder
+    font-size: 3em;         
+    font-family: 'Segoe UI', sans-serif;
+
+    - font-style -> font-weight -> font-size -> font family*/
+
+    font: italic bolder 3em 'Segoe UI', sans-serif;
+}
+h2 {
+    font: bold 2em 'Segoe Ui', sans-serif;
+}

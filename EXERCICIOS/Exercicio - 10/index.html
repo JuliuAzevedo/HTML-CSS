@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhano com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--Para adicionar um link externo utilize a tag <a>, e adicione o link, depois defina os atributos "target:"_blank"" e o "rel" para "external" -->
+
+    <!--O atributo "target:_blank" informa para o navegador que o redirecionamento ocorrera abrindo outra aba -->
+
+    <!--O atributo "rel="external"", vai dizer que a referencia(link) não faz parte daquele que faz a referencia(seu site)-->
+
+    <p>Você pode acessar <a href="https://www.instagram.com/julio_azevedo07" target="_blank" rel="external">minha conta no Instagram</a></p>
+    <p>Você pode acessar <a href="https://www.youtube.com/channel/UCYlCEM9Iv5tpngj1_sJ8Z6Q" target="_blank" rel="external">meu canal no Youtube</a></p>
+
+    <h1>Usando links internos</h2>
+    <!--Para criar um link interno precisamos de mais uma pagina no site, sendo assim podemos redirecionar-->
+
+    <!--O atributo "real="next"", vai dizer que a página acessada será a proxima do site, (ela possui o valor semantico, que já foi estudado )-->
+    <p>Está é a primeira página do site. Se você quiser, pode acessar tambem a minha <a href="pag002.html" target="_self" rel="next">segunda pagina</a></p>
+
+    <p>Voce tambem pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">Pagina de noticias</a></p>
+
+    <h1>Links para donwload</h1>
+    <ul>
+        <!--Baixando em .pdf-->
+        <li><a href="pdfaula.html/10 - Ligações em toda parte.pdf" target="_blank" download="pdfaula.pdf" type="application/pdf">Baixar a aula em PDF</a></li>
+
+        <!--Baixando em .rar-->
+        <li><a href="pdfaula.html/10 - Ligações em toda parte.rar" download="pdfaula.rar" target="_blank" type="application.rar">Baixar a aula em RAR</a></li>
+        
+        <!--Baixando em.zip-->
+        <li><a href="pdfaula.html/10 - Ligações em toda parte.zip" download="pdfaula.zip" type="application/zip" target="_blank">Baixar a aula em ZIP</a></li>
+    </ul>
+    
+</body>
+</html>

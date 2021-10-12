@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* em HTML é id    = em CSS é "#" (só pode um elemento)  
+   em HTML é class = em CSS é "." (pode varios elementos) 
+*/  
+body {
+    background-color: rgb(154, 224, 154);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1{
+    color: rgb(28, 128, 28);
+}
+/* Voce pode personalizar o seletor separadamente se ele tiver o "id", obs(não é nescessario informar qual o seletor, poderia ser apenas "#principal", e nisso todos os seletores que possuirem id principal, seram selecionados"*/
+#principal {
+    text-align: center;
+    background-color: rgb(28, 128, 28);
+    color: white;
+}
+h2{
+    color: rgb(38, 135, 233);
+}
+.basico{
+    color: dodgerblue; 
+    font-weight: bold;
+}
+.intermediario{
+    color: rgb(175, 175, 61);
+    font-weight: bold; 
+
+}
+.avancado{
+    color:  rgb(212, 64, 64);
+    font-weight: bold;
+}
+.destaque {
+    background-color: rgb(179, 153, 120);
+}

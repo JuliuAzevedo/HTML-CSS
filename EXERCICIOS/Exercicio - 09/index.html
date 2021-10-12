@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <!--A tag <ol> significa lista ordenada e dentro dela irá a tag <li> lista de itens-->
+
+    <ol type="1" start="1"> <!--A lista pode possuir variaçoes de acordo com o paramentro "type" (1,A,a,I,i), e pode escolher onde ela começa com o paramento "start"-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almocar</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <!--A tag <ul> significa lista não ordenada e da tambem carregara a tag <li> dentro dela-->
+
+    <ul type="disk"> <!--A lista não ordenada tambem possui o parametro "type", sendo eles o padrões square, circle, e disk(que é o padrão base e não precisa ser especificado como acima)-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Juntando lista ordena em uma lista ordenada</h2>
+    <h3>Melhores Jogadores de basquete</h3>
+
+    <ol>
+        <li>Antigos</li>
+        <ol type="I"> <!--É possivel criar um "aninhamento" fazendo uma lista dentro de uma lista -->
+            <li>Shaquille O’Neal</li>
+            <li>Larry Bird</li>
+            <li>Magic Johnson</li>
+            <li>Michael Jordan</li>
+        </ol>
+
+        <li>Novos</li>
+        <ol type="I" start="5"> <!--É possivel continuar da lista anterior com o paramentro start -->
+            <li>LeBron James</li>
+            <li>Stephen Curry</li>
+            <li>Chris Paul</li>
+            <li>James Harden</li>
+        </ol>
+    </ol>
+
+    <h2>Juntando uma Ordenada com Não ordenada</h2>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <!--PlayStation-->
+        <li>PlayStation 2</li>
+        <ul type = "square"> <!--É possivel colocar uma lista não ordenada detro de uma lista ordenada-->
+           <li>God of War</li>
+           <ul type = "circle"> <!--Pode ser feito infinitamente-->
+               <li>God of War I</li>
+               <li>God of War II</li>
+           </ul> 
+        </ul>
+        <!--Xbox-->
+        <li>Xbox 360</li>
+        <ul type = "square">
+           <li>GTA</li> 
+           <ul type = "circle">
+               <li>GTA IV</li>
+               <li>GTA V</li>
+           </ul>
+        </ul>
+        <!--PC-->
+        <li>PC</li>
+        <ul type = "square">
+           <li>Black Desert Online</li> 
+           <li>Lost Ark</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2> <!--A tag <dl> significa lista de definição, funciona como um dicionario, com um termo, a tag <dt> e a descrição, a tag <dd>-->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguaguem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de progamação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

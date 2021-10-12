@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom, #B7907E, #CAAF9C);
+    background-attachment: fixed;
+
+}
+/*A declaração "border-radius", vai deixar as bordas arredondadas*/
+
+/*A declaração "box-shadow", vai adicionar uma pequena sombra em volta da borda, e nescessita de 3 valores de pixels e uma cor*/
+
+/*A declaração "padding", vai adicionar um "acolchoamento" no texto, em relação a borda*/
+
+/*A declaração "margin", irá posicionar a parte que está selecionada automaticamente, ou em pixels*/
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #3849499f;
+    width: 600px;
+    padding: 10px;
+    margin:auto;
+}
+/*A declaração text-shadow, irá adicionar uma sombra ao redor do texto selecionado, e nescessita de 3 valores de pixels e uma cor*/
+h1{
+    color: #345051;
+    text-align: center;
+    text-shadow: 1px 1px 0px #456a6bc5;
+}
+h2{
+    color: #B28774;
+}
+p{
+    text-align: justify;
+}
+
+

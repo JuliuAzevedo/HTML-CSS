@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <!--O "*" antes do seletor quer dizer que ele é global das CSS-->
+
+    <!--Para fazer o Gradiente usa o atributo "background-image:linear-gradient", pode ser usado da esquerda para a direta, de cima pra baixo e vice e versa-->
+
+    <!--O atributo background-attachment: fixed serve para deixa o que está no fundo fixado caso ocorra de descer a tela-->
+    <style>
+        * {
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to right, #4767D7 , #8642BA, #C03092, #F2573E, #FECE69);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>
